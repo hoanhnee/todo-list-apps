@@ -14,3 +14,5 @@ def list_tasks():
             print("[X]", tasks[i]['name'])
         else:
             print("[ ]",tasks[i]['name'])
+def complete_task(task_index):
+    tasks [task_index] ['completed']=True
