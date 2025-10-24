@@ -8,3 +8,9 @@ if __name__ == "__main__":
     print("Chào mừng đến với ứng dụng To-Do List!")
     add_task("Học bài Git và GitHub")
     add_task("Làm bài tập thực hành ở nhà")
+def list_tasks():
+    for i in range (len(tasks)):
+        if tasks[i]['completed']==True:
+            print("[X]", tasks[i]['name'])
+        else:
+            print("[ ]",tasks[i]['name'])
